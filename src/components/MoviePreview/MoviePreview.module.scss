@@ -1,0 +1,56 @@
+.imgContainer {
+
+    height: 300px;
+    width: 200px;
+    background: linear-gradient( lightgray, darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 4px 5px gray;
+}
+
+.noImg {
+    width: 128px;
+    height: 128px;
+    opacity: 0.3;
+}
+
+.previewLabel {
+    text-align: center;
+}
+
+.preview {
+    width: 200px;
+    height: 300px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-wrap: wrap;
+    word-wrap: break-word;
+
+    width: 200px;
+    margin-right: 40px;
+
+    scale: 1.0;
+    transition: scale 0.1s ease-in-out;
+    animation: slideIn 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    scale: 1.05;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}

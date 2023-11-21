@@ -1,0 +1,29 @@
+.wrapper {
+    margin: 30px 40px 80px 40px;
+
+    font-family: 'Montserrat';
+    
+}
+
+.title {
+
+    color: #6F1D1B;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+
+    font-weight: bold;
+    color: #F4845F;
+    width: 15%;
+    display: block;
+    border-bottom: 1px solid #6F1D1B;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.previews {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}

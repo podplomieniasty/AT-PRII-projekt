@@ -2,25 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import "./assets/fonts/Montserrat.ttf";
+
+import Header from './components/Header/Header';
+import Section from './components/Section/Section';
+import Footer from './components/Footer/Footer';
+
+const App = () => {
+  return(
+    <div className='wrapper'>
+      <Header />
+      <Section title='New releases' subtitle='check them out ✨'/>
+      <Section title="vid.io's favourites" subtitle="voice of community 💪"/>
+      <Footer />
     </div>
-  );
+    
+  )
 }
 
 export default App;
