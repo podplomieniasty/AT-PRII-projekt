@@ -8,7 +8,6 @@ const Searchbar = () => {
             <img className={styles.searchIcon} src={searchIcon} />
             <input className={styles.searchbar} />
         </div>
-        
     )
 }
 

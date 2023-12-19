@@ -1,0 +1,59 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    font-family: 'Montserrat';
+
+    margin: 80px 120px;
+    animation: allFadeInLeft 0.6s ;
+}
+
+.poster {
+    height: 478px;
+    width: auto;
+
+    box-shadow: 0px 0px 15px black;
+}
+
+.movieInfo {
+    padding: 20px 0px 20px 40px;
+    width: 100%;
+
+}
+
+.title {
+    font-size: 32pt;
+
+    text-shadow: 2px 0px 10px gray;
+    color: #6F1D1B;
+}
+
+.subtitle {
+    color: #F27059;
+}
+
+.table {
+    margin-top: 30px;
+    
+}
+
+.table td {
+    font-size: 16pt;
+    padding-bottom: 20px;
+}
+
+.table tr td:nth-child(1) {
+    font-weight: bold;
+    padding-right: 80px;
+}
+
+@keyframes allFadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}

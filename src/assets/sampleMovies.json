@@ -1,24 +1,89 @@
 {
     "movies" : [
         {
+            "id": 1,
             "title": "Taylor Swift: The Era's Tour (2023)",
-            "url": "https://i.ebayimg.com/images/g/cQoAAOSwawplJYwf/s-l1200.jpg"
+            "url": "https://i.ebayimg.com/images/g/cQoAAOSwawplJYwf/s-l1200.jpg",
+            "productionYear": 2023,
+            "directors": [
+                "Sam Wrench"
+            ],
+            "writers": [
+                "Taylor Swift"
+            ],
+            "genres": [
+                "Musical", "Documentary"
+            ],
+            "madeIn": "USA",
+            "released": "13.10.2023"
         },
         {
+            "id": 2,
             "title": "Manitou's Shoe (2001)",
-            "url": "https://upload.wikimedia.org/wikipedia/en/a/af/Der-schuh-des-manitu.jpg"
+            "url": "https://upload.wikimedia.org/wikipedia/en/a/af/Der-schuh-des-manitu.jpg",
+            "productionYear": 2001,
+            "directors": [
+                "Michael Herbig"
+            ],
+            "writers": [
+                "Michal Herbig", "Rick Kavanian", "Alfons Biedermann", "Murmel Clausen"
+            ],
+            "genres": [
+                "Action", "Comedy", "Western"
+            ],
+            "madeIn": "Germany",
+            "released": "13.07.2001"
         },
         {
+            "id": 3,
             "title": "Five Night's At Freddy's (2023)",
-            "url": "https://i.ebayimg.com/images/g/naEAAOSw6F5k8MQV/s-l1200.webp"
+            "url": "https://i.ebayimg.com/images/g/naEAAOSw6F5k8MQV/s-l1200.webp",
+            "productionYear": 2023,
+            "directors": [
+                "Emma Tammi"
+            ],
+            "writers": [
+                "Scott Cawthon", "Seth Cuddeback", "Emma Tammi"
+            ],
+            "genres": [
+                "Horror", "Mystery", "Thriller"
+            ],
+            "madeIn": "USA",
+            "released": "27.10.2023"
         },
         {
+            "id": 4,
             "title": "Iron Lung (2024?)",
-            "url": "https://m.media-amazon.com/images/M/MV5BMzcwZmVhYTAtZjdiMC00NTNjLTkwNDctMjE3NjgyZmY2NzEzXkEyXkFqcGdeQXVyODc4NzkxNzk@._V1_.jpg"
+            "url": "https://m.media-amazon.com/images/M/MV5BMzcwZmVhYTAtZjdiMC00NTNjLTkwNDctMjE3NjgyZmY2NzEzXkEyXkFqcGdeQXVyODc4NzkxNzk@._V1_.jpg",
+            "productionYear": 2024,
+            "directors": [
+                "Mark Fischbach"
+            ],
+            "writers": [
+                "Mark Fischbach", "David Szymanski"
+            ],
+            "genres": [
+                "Horror", "Sci-Fi"
+            ],
+            "madeIn": "USA",
+            "released": "To Be Announced"
         },
         {
+            "id": 5,
             "title": "Bullet Train (2022)",
-            "url": "https://m.media-amazon.com/images/I/81Insz9s5PL.jpg"
+            "url": "https://m.media-amazon.com/images/I/81Insz9s5PL.jpg",
+            "productionYear": 2022,
+            "directors": [
+                "David Leitch"
+            ],
+            "writers": [
+                "Zak Olkewicz", "Kōtarō Isaka"
+            ],
+            "genres": [
+                "Action", "Comedy", "Drama"
+            ],
+            "madeIn": "USA",
+            "released": "14.07.2022"
         }
     ]
 }

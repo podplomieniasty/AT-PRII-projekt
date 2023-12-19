@@ -5,6 +5,7 @@ import MoviePreview from "../MoviePreview/MoviePreview";
 import manituImg from '../../assets/images/manitu.jpg';
 import taylorImg from '../../assets/images/taylor.jpg';
 import moviesJson from '../../assets/sampleMovies.json';
+import { Link } from "react-router-dom";
 
 const Section = (props: Props) => {
     
@@ -15,7 +16,9 @@ const Section = (props: Props) => {
             <div className={styles.previews}>
                 
                 {moviesJson.movies.map((mv, index) => 
-                    <MoviePreview name={mv.title} img={mv.url} key={index}/>
+                    <Link to={'/details/' + mv.id} style={{textDecoration: 'none', color: 'black'}}>
+                        <MoviePreview name={mv.title} img={mv.url} key={index}/>
+                    </Link>
                 )}
             </div>
         </section>

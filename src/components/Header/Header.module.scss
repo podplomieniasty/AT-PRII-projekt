@@ -39,3 +39,41 @@
     border-radius: 16px;
 
 }
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.addMovie {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 30px;
+    background-color: #6F1D1B;
+
+    color: #FFF;
+    font-size: 14pt;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+
+    &::before {
+        content: "+";
+        position: relative;
+        top: -1px;
+
+    }
+}
+
+.addMovie:hover {
+    transform: scale(1.3);
+}

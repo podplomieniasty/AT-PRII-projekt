@@ -3,6 +3,10 @@
     background-color: #6B7D7D;
     box-shadow: 0px 0px 10px #666666;
 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,4 +15,6 @@
     font-weight: 700;
     color: white;
     text-shadow: 0px 0px 10px black;
+
+    
 }
