@@ -77,3 +77,30 @@
 .addMovie:hover {
     transform: scale(1.3);
 }
+
+.fancyButton {
+    width: fit-content;
+    height: 30px;
+
+    padding: 0px 10px;
+
+    border: none;
+    border-radius: 30px;
+    background-color: #6F1D1B;
+
+    color: #FFF;
+    font-size: 10pt;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.fancyButton:hover {
+    transform: scale(1.3);
+}
