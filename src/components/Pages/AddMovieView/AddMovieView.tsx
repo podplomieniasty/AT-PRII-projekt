@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from './AddMovieView.module.scss';
 import sampleMovies from '../../../assets/sampleMovies.json';
@@ -19,6 +19,14 @@ const AddMovieView = () => {
         isGood: false,
         content: '',
     })
+
+    // check if user is logged in - if not, he can't add stuff
+    useEffect(() => {
+        const token = localStorage.getItem('loginToken');
+        if (!token) {
+          nav('/login');
+        }
+      }, []);
 
 
     const handleFormOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {

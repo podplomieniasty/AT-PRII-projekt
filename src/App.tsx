@@ -19,7 +19,6 @@ import RegisterView from './components/Pages/RegisterView/RegisterView';
 const App = () => {
   return(
     <div className='wrapper'>
-      
         <BrowserRouter>
         <Header />
           <Routes>
