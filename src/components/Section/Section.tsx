@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { InputHTMLAttributes, useEffect, useState } from "react";
 import styles from './Section.module.scss'
 
 import MoviePreview from "../MoviePreview/MoviePreview";
@@ -7,11 +7,13 @@ import taylorImg from '../../assets/images/taylor.jpg';
 import moviesJson from '../../assets/sampleMovies.json';
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Searchbar from "../Searchbar/Searchbar";
 
 const Section = (props: Props) => {
 
     const [movies, setMovies] = useState([]);
     const [failedToLoad, toggleFailedToLoad] = useState(false);
+    const [filteredMovies, setFilteredMovies] = useState([]);
 
     useEffect(() => {
         const url = 'https://at.usermd.net/api/movies';
@@ -19,6 +21,7 @@ const Section = (props: Props) => {
             .get(url)
             .then((res) => {
                 setMovies(res.data);
+                setFilteredMovies(res.data);
             })
             .catch((err) => {
                 toggleFailedToLoad(true);
@@ -33,14 +36,25 @@ const Section = (props: Props) => {
         )
         
     }
+
+    const handleChangedInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+        e.preventDefault();
+        const filtered = movies.filter((v:MovieInterface) => v.title.toLowerCase().trim().match(e.target.value.toLowerCase().trim()));
+        setFilteredMovies(filtered);
+        console.log(filtered);
+    }
     
     return(
         <section className={styles.wrapper}>
+            <Searchbar onChange={handleChangedInput}/>
+
             <h2 className={styles.title}>{props.title}</h2>
             <span className={styles.subtitle}>{props.subtitle}</span>
             <div className={styles.previews}>
                 {
-                    movies.map((mv) => mapAsLink(mv))
+                    filteredMovies.length !== 0 ?
+                    filteredMovies.map((mv) => mapAsLink(mv)) :
+                    <span className={styles.sadMessage}>We couldn't find any movies :c</span>
                 }
             </div>
         </section>

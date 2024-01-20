@@ -33,3 +33,20 @@
 
 }
 
+.sadMessage {
+    margin-top: 120px;
+    font-size: 40pt;
+    font-weight: bold;
+    color: gray;
+
+    animation: fadeIn 0.5s ease-in-out;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+

@@ -24,10 +24,10 @@ const Header = () => {
     nav('/');
     window.location.reload();
   };
+
     return(
         <header className={styles.wrapper}>
             <Link to='/' style={{textDecoration: 'none'}}><h1 className={styles.logo} >vid.io</h1></Link>
-            <Searchbar />
 
             <div className={styles.buttonsWrapper}>
                 <Link to='/add'><button className={styles.addMovie} /></Link>
